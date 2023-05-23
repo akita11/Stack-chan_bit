@@ -25,11 +25,11 @@
 micro:bitとｽﾀｯｸﾁｬﾝ(M5Stack)の間はUART通信で以下のような制御コマンドを送って制御します。[プロトコル詳細とmicro:bit側のカスタムブロック](https://docs.google.com/document/d/167KkDTLl4q2A9jWGB8BHNa3lgDhTbEqt-1NPs4zDYiw/edit#heading=h.bze9zta2801)
 
 - 動作の制御
- - Xnn : パン動作（横方向）nn=角度、範囲＝-90〜90（正面=0）
- - Ynn : チルト動作（縦方向）nn=角度、範囲=0〜30（正面=0から上向きへ）
+  - Xnn : パン動作（横方向）nn=角度、範囲＝-90〜90（正面=0）
+  - Ynn : チルト動作（縦方向）nn=角度、範囲=0〜30（正面=0から上向きへ）
 - 顔の制御
- - Txxxx : 吹き出しに”xxxx”と表示し、それにあわせて口が動く
- - En : 表情を設定。n=0〜5 (0=Angry, 1=Sleepy, 2=Happy, 3=Sat, 4=Doubt, 5=Neutral)
+  - Txxxx : 吹き出しに”xxxx”と表示し、それにあわせて口が動く
+  - En : 表情を設定。n=0〜5 (0=Angry, 1=Sleepy, 2=Happy, 3=Sat, 4=Doubt, 5=Neutral)
 
 
 ## Author
