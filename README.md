@@ -22,7 +22,8 @@
 
 ## プログラミング
 
-micro:bitとｽﾀｯｸﾁｬﾝ(M5Stack)の間はUART通信で以下のような制御コマンドを送って制御します。[プロトコル詳細とmicro:bit側のカスタムブロック](https://docs.google.com/document/d/167KkDTLl4q2A9jWGB8BHNa3lgDhTbEqt-1NPs4zDYiw/edit#heading=h.bze9zta2801)
+micro:bitとｽﾀｯｸﾁｬﾝ(M5Stack)の間はUART通信(115200bps・N81、コマンド区切りはLF/０ｘ０a/'\n'）で以下のような制御コマンドを送って制御します。[micro:bit側のカスタムブロック]([https://docs.google.com/document/d/167KkDTLl4q2A9jWGB8BHNa3lgDhTbEqt-1NPs4zDYiw/edit#heading=h.bze9zta2801](https://github.com/m-asaoka-fap/stackchanbit_2)も用意してあります。
+
 
 - 動作の制御
   - Xnn : パン動作（横方向）nn=角度、範囲＝-90〜90（正面=0）
@@ -35,5 +36,3 @@ micro:bitとｽﾀｯｸﾁｬﾝ(M5Stack)の間はUART通信で以下のよう�
 ## Author
 
 Junichi Akita (@akita11, akita@ifdl.jp)
-
-
