@@ -2,8 +2,8 @@
 
 #include <M5Unified.h>
 #if defined(ARDUINO_M5STACK_Core2)
-  #define SERVO_PIN_X 32
-  #define SERVO_PIN_Y 27
+  #define SERVO_PIN_X 27
+  #define SERVO_PIN_Y 32
   #define UART_PIN_TXD 14
   #define UART_PIN_RXD 13
 #elif defined(ARDUINO_M5Stack_Core_ESP32)
