@@ -185,10 +185,12 @@ void loop() {
     adjustOffset();
   }
   if (M5.BtnA.wasPressed()) {
+    Serial2.println("A");
     moveXY(90, 90);
   }
 
   if (M5.BtnB.wasPressed()) {
+    Serial2.println("B");
     for (int i = 0; i < 2; i++) {
       avatar.setSpeechText("X 90 -> 0  ");
       moveX(0);
@@ -206,7 +208,7 @@ void loop() {
     // ランダムモードへ
     moveRandom();
   }
-
+/*
   if ((millis() - last_mouth_millis) > mouth_wait) {
     const char* l = lyrics[lyrics_idx++ % lyrics_size];
     avatar.setSpeechText(l);
@@ -215,6 +217,7 @@ void loop() {
     avatar.setMouthOpenRatio(0.0);
     last_mouth_millis = millis();
   }
+  */
   if (Serial2.available()) {
     char c = Serial2.read();
     RXbuf[pRX++] = c;
@@ -228,19 +231,24 @@ void loop() {
           param = getParam();
           if (param < X_MIN) param = X_MIN;
           if (param > X_MAX) param = X_MAX;
-          moveX(param);
+//	        Serial.println(param);
+          moveX(param + START_DEGREE_VALUE_X);
           break;
         case 'Y':
           param = getParam();
           if (param < Y_MIN) param = Y_MIN;
           if (param > Y_MAX) param = Y_MAX;
-          moveY(param);
+//	        Serial.println(param);
+          moveY(-param + START_DEGREE_VALUE_Y);
           break;
         case 'T':
           avatar.setSpeechText(RXbuf + 1);
-          avatar.setMouthOpenRatio(0.7);
-          delay(200);
-          avatar.setMouthOpenRatio(0);
+	  for (int i = 0; i < 3; i++){
+            avatar.setMouthOpenRatio(0.7);
+            delay(200);			
+            avatar.setMouthOpenRatio(0);
+            delay(200);			
+	  }
           break;
         case 'E':
           param = getParam();
