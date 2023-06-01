@@ -6,6 +6,7 @@
 
 <img src="https://github.com/akita11/Stack-chan_bit/blob/main/Stack-chan_bit-2.jpg" width="240px">
 
+
 ## 使用例
 
 <img src="https://github.com/akita11/Stack-chan_bit/blob/main/usage1.jpg" width="240px">
@@ -60,6 +61,11 @@ micro:bitとｽﾀｯｸﾁｬﾝ(M5Stack)の間はUART通信(115200bps・N81、
 - 顔の制御
   - Txxxx : 吹き出しに”xxxx”と表示し、それにあわせて口が動く
   - En : 表情を設定。n=0〜5 (0=Angry, 1=Sleepy, 2=Happy, 3=Sat, 4=Doubt, 5=Neutral)
+
+
+## （おまけ）拡張用Grove端子
+
+M5Stackやmicro:bitの一部の端子をGrove端子に引き出せるようにGroveコネクタ実装部が用意してあります。詳細は回路図を参照してください。ただし使用する場合はGroveコネクタ部分にあわせて筐体(shell)の修正が必要になります。
 
 
 ## Author
