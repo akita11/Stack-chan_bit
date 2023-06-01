@@ -2,9 +2,9 @@
 
 [ｽﾀｯｸﾁｬﾝ](https://protopedia.net/prototype/2345Stack-chan)に[micro:bit](https://www.switch-science.com/products/7952)を差し込んで制御するボードです。micro:bitのプログラミングでｽﾀｯｸﾁｬﾝを動かすことができます。
 
-<img src="https://github.com/akita11/Stack-chan_bit/blob/main/Stack-chan_bit1.jpg" width="240px">
+<img src="https://github.com/akita11/Stack-chan_bit/blob/main/Stack-chan_bit-1.jpg" width="240px">
 
-<img src="https://github.com/akita11/Stack-chan_bit/blob/main/Stack-chan_bit1.jpg" width="240px">
+<img src="https://github.com/akita11/Stack-chan_bit/blob/main/Stack-chan_bit-2.jpg" width="240px">
 
 ## 使用例
 
@@ -12,7 +12,7 @@
 
 <img src="https://github.com/akita11/Stack-chan_bit/blob/main/usage2.jpg" width="240px">
 
-micro:bit側のプログラム（m-asaoka-fap氏作成のカスタムブロックあり）から、ｽﾀｯｸﾁｬﾝを制御できます。→[使用例](https://twitter.com/akita11/status/1656496746321842176)
+micro:bit側のプログラム（m-asaoka-fap氏作成の[カスタムブロック](https://github.com/m-asaoka-fap/stackchanbit_2)あり）から、ｽﾀｯｸﾁｬﾝを制御できます。→[使用例](https://twitter.com/akita11/status/1656496746321842176)
 
 
 ## 作り方
